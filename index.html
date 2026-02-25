@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <title>Problema</title>
+</head>
+<link rel="stylesheet" href="CSS/indexc.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Matricula de Estudiantes</h1>
+    <form action="miConexion.php" method="post">
+      <label for="nombre">Ingrese nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Ingrese mail:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="codigocurso">Seleccione el curso:</label>
+      <select id="codigocurso" name="codigocurso" required>
+        <option value="1">Base de datos</option>
+        <option value="2">Desarrollo 1</option>
+        <option value="3">Inteligencia Artificial</option>
+      </select>
+
+      <input type="submit" value="Registrar">
+      <a href="mostrar_usuarios.php" class="btn-ver">Ver Usuarios</a>
+    </form>
+  </div>
+</body>
+</html>

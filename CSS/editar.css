@@ -1,0 +1,134 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1a; /* Negro suave */
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.5); 
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #ff66b2; /* Rosa */
+    color: #111;
+    font-weight: bold;
+}
+
+td {
+    border-bottom: 1px solid #ffffff; 
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    outline: none;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button[name="update"] {
+    background: #ff66b2; 
+    color: #111;
+}
+
+button[name="delete"] {
+    background: #ff66b2; 
+    color: #111;
+}
+
+#editFormContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 25px;
+    box-shadow: 0px 4px 15px rgba(255, 105, 180, 0.6);
+    border-radius: 10px;
+    width: 350px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+button.cancel {
+    background: #ffcc00;
+    color: #111;
+}
+
+.back-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 20px;
+    background: rgb(255, 102, 178);
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ffffff;
+    transform: scale(1.1);
+}
+.boton-return a {
+    background: linear-gradient(45deg, #ff66b2, #9d00ff); 
+    color: white; 
+    text-decoration: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(255, 105, 180, 0.6);
+    margin-top: 20px; 
+    display: inline-block; 
+    
+}
